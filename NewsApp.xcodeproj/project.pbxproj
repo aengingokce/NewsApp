@@ -14,6 +14,7 @@
 		8BBB7EE7279C83E0007447CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBB7EE5279C83E0007447CB /* LaunchScreen.storyboard */; };
 		8BBB7EF1279C8CF0007447CB /* NewsListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB7EF0279C8CF0007447CB /* NewsListTVC.swift */; };
 		8BBB7EF5279C8D56007447CB /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB7EF4279C8D56007447CB /* ThemeManager.swift */; };
+		8BBB7EF8279C9503007447CB /* NewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB7EF7279C9503007447CB /* NewsListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8BBB7EE8279C83E0007447CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BBB7EF0279C8CF0007447CB /* NewsListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTVC.swift; sourceTree = "<group>"; };
 		8BBB7EF4279C8D56007447CB /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		8BBB7EF7279C9503007447CB /* NewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		8BBB7ED9279C83DF007447CB /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				8BBB7EF6279C94E6007447CB /* Cells */,
 				8BBB7EEF279C8C63007447CB /* Managers */,
 				8BBB7EEE279C8C5C007447CB /* Controllers */,
 				8BBB7EDA279C83DF007447CB /* AppDelegate.swift */,
@@ -84,6 +87,14 @@
 				8BBB7EF4279C8D56007447CB /* ThemeManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		8BBB7EF6279C94E6007447CB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB7EF7279C9503007447CB /* NewsListCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BBB7EF1279C8CF0007447CB /* NewsListTVC.swift in Sources */,
+				8BBB7EF8279C9503007447CB /* NewsListCell.swift in Sources */,
 				8BBB7EDB279C83DF007447CB /* AppDelegate.swift in Sources */,
 				8BBB7EDD279C83DF007447CB /* SceneDelegate.swift in Sources */,
 				8BBB7EF5279C8D56007447CB /* ThemeManager.swift in Sources */,
