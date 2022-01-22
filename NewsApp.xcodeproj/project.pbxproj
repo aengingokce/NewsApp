@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		8BBB7EDB279C83DF007447CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB7EDA279C83DF007447CB /* AppDelegate.swift */; };
 		8BBB7EDD279C83DF007447CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB7EDC279C83DF007447CB /* SceneDelegate.swift */; };
-		8BBB7EDF279C83DF007447CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB7EDE279C83DF007447CB /* ViewController.swift */; };
 		8BBB7EE2279C83DF007447CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBB7EE0279C83DF007447CB /* Main.storyboard */; };
 		8BBB7EE4279C83E0007447CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBB7EE3279C83E0007447CB /* Assets.xcassets */; };
 		8BBB7EE7279C83E0007447CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBB7EE5279C83E0007447CB /* LaunchScreen.storyboard */; };
+		8BBB7EF1279C8CF0007447CB /* NewsListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB7EF0279C8CF0007447CB /* NewsListTVC.swift */; };
+		8BBB7EF5279C8D56007447CB /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB7EF4279C8D56007447CB /* ThemeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8BBB7ED7279C83DF007447CB /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBB7EDA279C83DF007447CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BBB7EDC279C83DF007447CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8BBB7EDE279C83DF007447CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8BBB7EE1279C83DF007447CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BBB7EE3279C83E0007447CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BBB7EE6279C83E0007447CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BBB7EE8279C83E0007447CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BBB7EF0279C8CF0007447CB /* NewsListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTVC.swift; sourceTree = "<group>"; };
+		8BBB7EF4279C8D56007447CB /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		8BBB7ED9279C83DF007447CB /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				8BBB7EEF279C8C63007447CB /* Managers */,
+				8BBB7EEE279C8C5C007447CB /* Controllers */,
 				8BBB7EDA279C83DF007447CB /* AppDelegate.swift */,
 				8BBB7EDC279C83DF007447CB /* SceneDelegate.swift */,
-				8BBB7EDE279C83DF007447CB /* ViewController.swift */,
 				8BBB7EE0279C83DF007447CB /* Main.storyboard */,
 				8BBB7EE3279C83E0007447CB /* Assets.xcassets */,
 				8BBB7EE5279C83E0007447CB /* LaunchScreen.storyboard */,
 				8BBB7EE8279C83E0007447CB /* Info.plist */,
 			);
 			path = NewsApp;
+			sourceTree = "<group>";
+		};
+		8BBB7EEE279C8C5C007447CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB7EF0279C8CF0007447CB /* NewsListTVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8BBB7EEF279C8C63007447CB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB7EF4279C8D56007447CB /* ThemeManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BBB7EDF279C83DF007447CB /* ViewController.swift in Sources */,
+				8BBB7EF1279C8CF0007447CB /* NewsListTVC.swift in Sources */,
 				8BBB7EDB279C83DF007447CB /* AppDelegate.swift in Sources */,
 				8BBB7EDD279C83DF007447CB /* SceneDelegate.swift in Sources */,
+				8BBB7EF5279C8D56007447CB /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
