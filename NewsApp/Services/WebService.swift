@@ -21,7 +21,9 @@ class WebService {
                 comp(nil)
             }
             if let data = data {
-                comp(resource.parse(data))
+                DispatchQueue.main.async {
+                    comp(resource.parse(data))
+                }
             }
         }.resume()
     }
