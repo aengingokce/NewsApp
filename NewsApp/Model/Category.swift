@@ -7,4 +7,15 @@
 
 import Foundation
 
-struct
+struct Category {
+    let title: String
+    let articles: [Article]
+}
+
+extension Category {
+    static func allCategories() -> [String] {
+        return ["Business", "Entertainment", "General", "Sport"]
+    }
+}
+
+

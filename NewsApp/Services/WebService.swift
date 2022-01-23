@@ -7,12 +7,12 @@
 
 import Foundation
 
+struct Resource<T> {
+    let url: URL
+    let parse: (Data) -> T?
+}
+
 class WebService {
-    
-    struct Resource<T> {
-        let url: URL
-        let parse: (Data) -> T?
-    }
     
     func load<T>(resource: Resource<T>, comp: @escaping (T?) -> ()) {
         URLSession.shared.dataTask(with: resource.url) { data, response, err in

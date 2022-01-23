@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - NewsSource
-struct NewsSource: Decodable {
+struct NewsSources: Decodable {
     let articles: [Article]
 }
 
@@ -22,5 +22,14 @@ struct Article: Decodable {
     enum CodingKeys: String, CodingKey {
         case title, description, url
         case imageUrl = "urlToImage"
+    }
+}
+
+// MARK: - Extension for Article
+extension Article {
+    static func by(category: String) -> Resource<[Article]> {
+        return Resource<[Article]>(url: URL.urlForTopHeadlines(for: category)) { data in
+            return try! JSONDecoder().decode(NewsSources.self, from: data).articles 
+        }
     }
 }
