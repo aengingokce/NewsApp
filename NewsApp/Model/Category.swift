@@ -14,7 +14,7 @@ struct Category {
 
 extension Category {
     static func allCategories() -> [String] {
-        return ["Business", "Entertainment", "General", "Sport"]
+        return ["business", "entertainment", "general", "health", "science", "sports", "technology"]
     }
 }
 

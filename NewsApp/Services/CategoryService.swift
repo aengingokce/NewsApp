@@ -22,7 +22,7 @@ class CategoryService {
                 let category = Category(title: category, articles: articles)
                 categories.append(category)
                 if requestCount == categoryCount {
-                    comp(categories)
+                    DispatchQueue.main.async { comp(categories) }
                 }
             }
         }
