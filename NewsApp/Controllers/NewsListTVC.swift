@@ -13,7 +13,10 @@ class NewsListTVC: UITableViewController {
         super.viewDidLoad()
         
         setUI()
-        
+        getArticles()
+    }
+    
+    func getArticles() {
         CategoryService().getAllArticlesforeachCategory { category in
             print(category)
         }

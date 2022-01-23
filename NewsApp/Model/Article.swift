@@ -17,7 +17,7 @@ struct Article: Decodable {
     let title: String
     let description: String
     let url: String
-    let imageUrl: String
+    let imageUrl: String?
 
     enum CodingKeys: String, CodingKey {
         case title, description, url
