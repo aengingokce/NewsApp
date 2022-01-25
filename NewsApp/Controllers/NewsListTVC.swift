@@ -38,11 +38,11 @@ class NewsListTVC: UITableViewController {
         let articleVM = self.categoryListViewModel.categoryAtIndex(index: indexPath.section).articleAtIndex(indexPath.row)
         cell.configure(vm: articleVM)
         return cell
-        
     }
     
     func setUI() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.tableView.tableHeaderView = UIView.viewForTableViewHeader(subtitle: Date.dateAsStringForTableViewHeader())
     }
     
 }
