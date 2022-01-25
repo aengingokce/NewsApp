@@ -49,6 +49,15 @@ class NewsListTVC: UITableViewController {
         return self.categoryListViewModel.heightForHeaderInSection(section)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailsVC" {
+            guard let detailsVC = segue.destination as? NewsDetailsVC else { return }
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let articleVM = self.categoryListViewModel.categoryAtIndex(index: indexPath.section).articleAtIndex(indexPath.row)
+            detailsVC.article = articleVM.article
+        }
+    }
+    
     func setUI() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.tableView.tableHeaderView = UIView.viewForTableViewHeader(subtitle: Date.dateAsStringForTableViewHeader())

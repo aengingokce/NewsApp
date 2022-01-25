@@ -19,8 +19,7 @@ extension NewsDetailsViewModel {
 
 extension NewsDetailsViewModel {
     var sourceName: String {
-        return "sourceName"
-        //return article.sourceName
+        return self.article.sourceName
     }
     
     var url: String? {

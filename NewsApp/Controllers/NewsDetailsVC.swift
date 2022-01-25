@@ -10,10 +10,25 @@ import WebKit
 
 class NewsDetailsVC: UIViewController {
     
+    @IBOutlet weak var webView: WKWebView!
+    
     var article: Article!
     var newDetailsVM: NewsDetailsViewModel!
     
-    @IBOutlet weak var webView: WKWebView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setUI()
+    }
     
+    func setUI() {
+        self.newDetailsVM = NewsDetailsViewModel(article: article)
+        self.navigationItem.largeTitleDisplayMode = .never
+        self.title = self.newDetailsVM.sourceName
+        guard let url = self.newDetailsVM.url,
+              let newsDetailUrl = URL(string: url) else { return }
+        let request = URLRequest(url: newsDetailUrl)
+        self.webView.load(request)
+    }
 }
 

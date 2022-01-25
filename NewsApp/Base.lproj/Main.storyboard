@@ -48,7 +48,7 @@
                                     <outlet property="descriptionLabel" destination="YkW-zD-2Dz" id="gst-di-eK8"/>
                                     <outlet property="headlineImageView" destination="xSY-ke-K56" id="5Bg-jP-d5u"/>
                                     <outlet property="headlineLabel" destination="osh-UQ-LDS" id="78g-I2-OYB"/>
-                                    <segue destination="6NP-UY-txu" kind="show" identifier="toDetailVC" id="IC3-cT-I1x"/>
+                                    <segue destination="6NP-UY-txu" kind="show" identifier="toDetailsVC" id="IC3-cT-I1x"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
