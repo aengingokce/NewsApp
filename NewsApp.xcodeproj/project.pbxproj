@@ -29,6 +29,7 @@
 		8BE95F1D27A0912A006AB8CE /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE95F1C27A0912A006AB8CE /* UIFont+.swift */; };
 		8BE95F1F27A0936F006AB8CE /* NewsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE95F1E27A0936F006AB8CE /* NewsDetailsVC.swift */; };
 		8BE95F2127A093D4006AB8CE /* NewsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE95F2027A093D4006AB8CE /* NewsDetailsViewModel.swift */; };
+		8BE95F2327A09F8F006AB8CE /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BE95F2227A09F8F006AB8CE /* placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		8BE95F1C27A0912A006AB8CE /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		8BE95F1E27A0936F006AB8CE /* NewsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsVC.swift; sourceTree = "<group>"; };
 		8BE95F2027A093D4006AB8CE /* NewsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewModel.swift; sourceTree = "<group>"; };
+		8BE95F2227A09F8F006AB8CE /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				8BBB7EE0279C83DF007447CB /* Main.storyboard */,
 				8BBB7EE3279C83E0007447CB /* Assets.xcassets */,
 				8BBB7EE5279C83E0007447CB /* LaunchScreen.storyboard */,
+				8BE95F2227A09F8F006AB8CE /* placeholder.png */,
 				8BBB7EE8279C83E0007447CB /* Info.plist */,
 			);
 			path = NewsApp;
@@ -240,6 +243,7 @@
 				8BBB7EE7279C83E0007447CB /* LaunchScreen.storyboard in Resources */,
 				8BBB7EE4279C83E0007447CB /* Assets.xcassets in Resources */,
 				8BBB7EE2279C83DF007447CB /* Main.storyboard in Resources */,
+				8BE95F2327A09F8F006AB8CE /* placeholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

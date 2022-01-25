@@ -10,7 +10,7 @@ import UIKit
 extension UIImage {
     
     static func imageForPlaceHolder() -> UIImage {
-        return UIImage(named: "placeholder")!
+        return UIImage(named: "placeholder.png")!
     }
     
     static func imageForArticles(url: String, comp: @escaping (UIImage) -> ()) {
