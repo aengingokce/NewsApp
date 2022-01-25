@@ -27,4 +27,8 @@ extension CategoryListViewModel {
     func articleForSectionAtIndex(section: Int, index: Int) -> ArticleViewModel {
         return categoryAtIndex(index: section).articleAtIndex(index)
     }
+    
+    func heightForHeaderInSection(_ section: Int) -> CGFloat {
+        return 60.0
+    }
 }

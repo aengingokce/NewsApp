@@ -25,6 +25,11 @@ class NewsListTVC: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let name = self.categoryListViewModel.categoryAtIndex(index: section).name
+        return UIView.viewForSectionHeader(title: name)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return self.categoryListViewModel == nil ? 0 : self.categoryListViewModel.numberOfSections
     }
@@ -38,6 +43,10 @@ class NewsListTVC: UITableViewController {
         let articleVM = self.categoryListViewModel.categoryAtIndex(index: indexPath.section).articleAtIndex(indexPath.row)
         cell.configure(vm: articleVM)
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return self.categoryListViewModel.heightForHeaderInSection(section)
     }
     
     func setUI() {
