@@ -10,7 +10,7 @@ This application provides you with current news by date and categories. The app 
 
 ## Getting Started
 
-You can directly launch the app in XCode. No extra installation.
+You can directly launch the app in XCode.
 
 ### Installation
 
@@ -19,12 +19,7 @@ You can directly launch the app in XCode. No extra installation.
    ```sh
    git clone https://github.com/aengingokce/NewsApp
    ```
-3. If you have macbook with M1 Chip you can install pod files wia
-   ```sh
-   sudo arch -x86_64 gem install ffi
-    arch -x86_64 pod install
-   ```
-4. Enter your API in `NewsAPI`
+3. Enter your API in `NewsAPI`
    ```swift
    let API_KEY = 'ENTER YOUR API';
    ```
