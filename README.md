@@ -15,6 +15,7 @@
         <li><a href="#requirements">Requirements</a></li>
       </ul>
     </li>
+     <li><a href="#visual">Visual</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
