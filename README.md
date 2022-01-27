@@ -19,9 +19,9 @@ You can directly launch the app in XCode.
    ```sh
    git clone https://github.com/aengingokce/NewsApp
    ```
-3. Enter your API in `NewsAPI`
+3. Enter your API in `/Utils/Extensions/URL+.swift`
    ```swift
-   let API_KEY = 'ENTER YOUR API';
+   return URL(string: "https://newsapi.org/v2/top-headlines?category=\(category)&country=tr&apiKey=YOUR_API_KEY")!;
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
