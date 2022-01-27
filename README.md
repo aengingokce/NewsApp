@@ -12,6 +12,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#requirements">Requirements</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
